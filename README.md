@@ -1,2 +1,2 @@
-# MOD_versionTuchscherr22
+# MOD_versionTuchscherr
 Version modificada del juego.
