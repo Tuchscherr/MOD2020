@@ -1,2 +1,2 @@
-# MOD_versionGregorini
+# MOD_versionTuchscherr
 Version modificada del juego.
