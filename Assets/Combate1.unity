@@ -124,7 +124,7 @@ Prefab:
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
       propertyPath: Acciones.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224001761322863672, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
@@ -311,7 +311,7 @@ Prefab:
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
       propertyPath: Acciones.Array.data[2].nombre
-      value: Cubrir
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
@@ -326,12 +326,12 @@ Prefab:
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
       propertyPath: Acciones.Array.data[2].argumento
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
       propertyPath: Acciones.Array.data[2].animacionTrigger
-      value: Bloquear
+      value: Bloqueo
       objectReference: {fileID: 0}
     - target: {fileID: 114568828561095502, guid: 53619836a230c414db7b99076230c12a,
         type: 2}
@@ -1001,7 +1001,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.00006365799, y: -1}
-  m_SizeDelta: {x: 472.5, y: 83.809525}
+  m_SizeDelta: {x: 472.5, y: 81.98757}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63785840
 MonoBehaviour:
@@ -1421,16 +1421,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Tierra
@@ -1671,22 +1665,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Arena
@@ -1777,6 +1765,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 352163949}
     m_Modifications:
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224222623519705288, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1931,7 +1924,7 @@ Prefab:
     - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
       propertyPath: Acciones.Array.data[2].nombre
-      value: Curar
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
@@ -1941,17 +1934,42 @@ Prefab:
     - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
       propertyPath: Acciones.Array.data[2].argumento
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
       propertyPath: Acciones.Array.data[2].animacionTrigger
-      value: Curar
+      value: Bloqueo
       objectReference: {fileID: 0}
     - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
         type: 2}
       propertyPath: Acciones.Array.data[2].mensaje
-      value: Curar
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].nombre
+      value: Cubrir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].objetivoEsElMismo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].mensaje
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].argumento
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236686481228490, guid: 27407c66123e55942b825ec482d7684c,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].animacionTrigger
+      value: Bloquear
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27407c66123e55942b825ec482d7684c, type: 2}
@@ -2392,22 +2410,16 @@ MonoBehaviour:
   barraSalud: {fileID: 411787097}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Aire
@@ -2585,22 +2597,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Arena
@@ -3517,7 +3523,7 @@ Prefab:
     - target: {fileID: 114921580537000960, guid: 150ef4801cc5d5f44bfaa4f74175b757,
         type: 2}
       propertyPath: Acciones.Array.data[2].nombre
-      value: Cubrir
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114921580537000960, guid: 150ef4801cc5d5f44bfaa4f74175b757,
         type: 2}
@@ -3654,6 +3660,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 352163949}
     m_Modifications:
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224329796872197162, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3844,17 +3855,17 @@ Prefab:
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
       propertyPath: Acciones.Array.data[2].nombre
-      value: Curar
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
       propertyPath: Acciones.Array.data[2].argumento
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
       propertyPath: Acciones.Array.data[2].animacionTrigger
-      value: Curar
+      value: Bloqueo
       objectReference: {fileID: 0}
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
@@ -3875,7 +3886,7 @@ Prefab:
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
       propertyPath: Acciones.Array.data[2].mensaje
-      value: Curar
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
         type: 2}
@@ -3886,6 +3897,31 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.z
       value: -25.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].nombre
+      value: Cubrir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].objetivoEsElMismo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].mensaje
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].argumento
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214293318687324, guid: 3368281f5abee7848888f74bc46e9139,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].animacionTrigger
+      value: Bloquear
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3368281f5abee7848888f74bc46e9139, type: 2}
@@ -3990,17 +4026,11 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Curar
-    objetivoEsElMismo: 1
-    mensaje: Curar
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Cubrir
+  - nombre: Bloquear
     objetivoEsElMismo: 1
     mensaje: Bloquear
-    argumento: 20
-    animacionTrigger: Bloquear
+    argumento: 10
+    animacionTrigger: Bloqueo
     costoMana: 0
   nombre: Mateo
   mana: 100
@@ -4068,6 +4098,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 352163949}
     m_Modifications:
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224915545785510078, guid: 2c8094cef7a43cd49a6c9950b77687a9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -4273,12 +4308,12 @@ Prefab:
     - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
         type: 2}
       propertyPath: Acciones.Array.data[1].nombre
-      value: Curar
+      value: Bloquear
       objectReference: {fileID: 0}
     - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
         type: 2}
       propertyPath: Acciones.Array.data[1].argumento
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
         type: 2}
@@ -4299,7 +4334,37 @@ Prefab:
     - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
         type: 2}
       propertyPath: Acciones.Array.data[1].mensaje
-      value: Curar
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].nombre
+      value: Cubrir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].objetivoEsElMismo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].mensaje
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].argumento
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[3].animacionTrigger
+      value: Bloquear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689230102590254, guid: 2c8094cef7a43cd49a6c9950b77687a9,
+        type: 2}
+      propertyPath: Acciones.Array.data[1].animacionTrigger
+      value: Bloqueo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c8094cef7a43cd49a6c9950b77687a9, type: 2}
@@ -4432,22 +4497,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Hielo
@@ -4589,22 +4648,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1869086594}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Electrico
@@ -4842,22 +4895,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Metal
@@ -5361,16 +5408,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Fuego
@@ -6066,22 +6107,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Metal
@@ -7093,22 +7128,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Lodo
@@ -7382,16 +7411,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Normal
@@ -7684,16 +7707,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Normal
@@ -7946,22 +7963,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1869086594}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Electrico
@@ -8177,16 +8188,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Aire
@@ -8483,16 +8488,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Tierra
@@ -8670,22 +8669,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
-    mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
-  - nombre: Especial
+  - nombre: Golpear
     objetivoEsElMismo: 0
     mensaje: CambiarVida
     argumento: -10
+    animacionTrigger: Ataque
+    costoMana: 0
+  - nombre: Especial
+    objetivoEsElMismo: 1
+    mensaje: CambiarVida
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Lava
@@ -8873,16 +8866,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Curar
-    objetivoEsElMismo: 0
+    objetivoEsElMismo: 1
     mensaje: Curar
-    argumento: -10
+    argumento: 10
     animacionTrigger: Curar
     costoMana: 0
   nombre: Dragoncito Agua
@@ -9024,22 +9011,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Hielo
@@ -9526,22 +9507,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Lava
@@ -9701,22 +9676,16 @@ MonoBehaviour:
   barraSalud: {fileID: 1743567372}
   vida: 100
   Acciones:
-  - nombre: Curar
-    objetivoEsElMismo: 1
+  - nombre: Golpear
+    objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Curar
-    costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
+    argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Lodo
@@ -10286,12 +10255,6 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: CambiarVida
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Curar
     objetivoEsElMismo: 1
     mensaje: Curar
@@ -10782,16 +10745,10 @@ MonoBehaviour:
     argumento: -10
     animacionTrigger: Ataque
     costoMana: 0
-  - nombre: Bloquear
-    objetivoEsElMismo: 1
-    mensaje: Bloquear
-    argumento: 10
-    animacionTrigger: Ataque
-    costoMana: 0
   - nombre: Especial
     objetivoEsElMismo: 0
     mensaje: CambiarVida
-    argumento: -10
+    argumento: -15
     animacionTrigger: Ataque
     costoMana: 0
   nombre: Dragoncito Fuego

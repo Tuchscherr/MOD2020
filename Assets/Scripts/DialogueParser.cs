@@ -40,22 +40,14 @@ public class DialogueParser : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		//string file = "Assets/Data/Dialogue1.tsv";
-		//string file = dialo1.text;
-
-		string file = System.IO.Path.Combine(Application.streamingAssetsPath , "Data/Dialogue");
-		print ("leyendo: "+file);
+		//string file = "Dialogue1.tsv";
 		string sceneNum = SceneManager.GetActiveScene ().name;
-
 		sceneNum = Regex.Replace (sceneNum, "[^0-9]", "");
-		file += sceneNum;
-		file += ".tsv";
-
+		string file = System.IO.Path.Combine(Application.streamingAssetsPath , "Dialogue"+sceneNum+".tsv");
+		print ("leyendo: "+file);
 		lines = new List<DialogueLine>();
 		LoadDialogue (file);
 		print ("leyendo: "+file);
-
 	}
 	
 	// Update is called once per frame

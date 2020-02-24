@@ -618,12 +618,16 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 540b5142-b3a6-420c-8ea6-3062a39a3492
-  projectName: MOD Tuchscherr 2020
-  organizationId: tuchscherr
+  cloudProjectId: 8b0e5221-41f1-41ae-804a-f143c733357d
+  projectName: MOD Gregorini
+  organizationId: cosimita15
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
